@@ -93,3 +93,4 @@ out/
 
 # Local files
 .local
+.claude/*.local.*
