@@ -8,6 +8,7 @@
 
 - Electron Forge + Vite + TypeScript.
 - Vue 3 renderer.
+- Tailwind CSS v4 + shadcn-vue.
 - xterm.js terminal.
 
 ## Tooling
@@ -16,6 +17,7 @@
 - ESLint flat config — `npm run lint` / `lint:fix`.
 - `vue-tsc` — `npm run typecheck`.
 - Vitest — `npm test` / `test:watch`.
+- shadcn-vue — `npx shadcn-vue@latest add <name>`.
 
 ## Workflow
 

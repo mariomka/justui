@@ -20,6 +20,13 @@ export default tseslint.config(
     },
   },
   {
+    files: ['src/components/ui/**'],
+    rules: {
+      'vue/multi-word-component-names': 'off',
+      'vue/require-default-prop': 'off',
+    },
+  },
+  {
     languageOptions: {
       globals: {
         ...globals.browser,
