@@ -6,15 +6,24 @@
 
 ## Stack
 
-- Electron + TypeScript + Vite (Electron Forge scaffold).
-- Vue 3 in the renderer. `vite.renderer.config.mts` is `.mts` because `@vitejs/plugin-vue@6` is ESM-only.
-- xterm.js for the terminal.
+- Electron Forge + Vite + TypeScript.
+- Vue 3 renderer.
+- xterm.js terminal.
 
 ## Tooling
 
-- `npm run format:check`
-- `npm run :fix`
-- `npm run typecheck`
+- Prettier — `npm run format` / `format:check`.
+- ESLint flat config — `npm run lint` / `lint:fix`.
+- `vue-tsc` — `npm run typecheck`.
+- Vitest — `npm test` / `test:watch`.
+
+## Workflow
+
+- Husky pre-commit runs lint-staged (eslint + prettier on staged files), `typecheck`, and `test`. No need to run them manually before committing — run them mid-task only when you want fast feedback.
+
+## Conventions
+
+- Co-locate tests with their source.
 
 ## Visual style
 
