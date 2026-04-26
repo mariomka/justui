@@ -7,7 +7,14 @@
 ## Stack
 
 - Electron + TypeScript + Vite (Electron Forge scaffold).
+- Vue 3 in the renderer. `vite.renderer.config.mts` is `.mts` because `@vitejs/plugin-vue@6` is ESM-only.
 - xterm.js for the terminal.
+
+## Tooling
+
+- Prettier for formatting (`npm run format`, `npm run format:check`).
+- ESLint 9 flat config (`eslint.config.mjs`) with `typescript-eslint` and `eslint-plugin-vue` for `.ts` and `.vue` (`npm run lint`).
+- TypeScript 5 with `moduleResolution: "bundler"` so `exports`-only ESM packages (like `@vitejs/plugin-vue`) type-check correctly.
 
 ## Visual style
 
